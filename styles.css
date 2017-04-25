@@ -51,8 +51,8 @@ a:hover, a:focus, a:active {
 /* header */
 header {
 	background: #1d7fa8 url(assets/header_background.png);
-	background-repeat: repeat-x;
-	background-attachment: center;
+	background-repeat: no-repeat;
+	background-position: top center;
 	text-align: center;
 }
 .logoContainer {
