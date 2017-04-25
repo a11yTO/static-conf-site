@@ -1,0 +1,9 @@
+/* fonts */
+h1 {
+	color: white;
+}
+
+/* header */
+header {
+	background: #3A7EA4 url(assets/header_background.png);
+}
