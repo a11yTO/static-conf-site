@@ -134,4 +134,5 @@ footer p {
     padding: 10px 0 30px;
     position: relative;
     left: 17%;
+    display: inline-block;
 }
