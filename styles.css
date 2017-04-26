@@ -125,6 +125,18 @@ li {
 	line-height: 58px;
 }
 
+.logos {
+	display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo {
+	width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 /* footer */
 footer {
 	background: #f5f5f5;
