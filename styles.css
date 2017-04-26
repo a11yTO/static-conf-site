@@ -124,17 +124,17 @@ li {
 	font-weight: 400;
 	line-height: 58px;
 }
-
 .logos {
+	display: -ms-flexbox;
 	display: flex;
     width: 100%;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .logo {
 	width: 100%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 /* footer */
