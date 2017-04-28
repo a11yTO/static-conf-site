@@ -55,7 +55,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: top center;
 	text-align: center;
-	min-height: 100vh;
+	background-size: 150%;
 }
 .logoContainer {
 	border-bottom: 3px solid #60A4C5;
@@ -133,6 +133,7 @@ li {
     justify-content: space-around;
     -ms-flex-align: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .logo {
 	width: 100%;
@@ -150,3 +151,30 @@ footer p {
     left: 17%;
     display: inline-block;
 }
+
+@media (max-width: 1180px) {
+	h1 {
+		font-size: 9.5vw; 
+		margin: 8vw 0 6.5vw;
+	}
+
+	p {
+		font-size: 2.55vw;
+	}
+
+	header {
+		min-height: 35vw;
+	}
+
+	header p {
+		font-size: 4.5vw;
+		line-height: 5.8vw;
+	}
+
+	header p.subtitle {
+		font-size: 3vw;
+	    line-height: 4.5vw;
+	    padding: 6vw 0 8vw;
+	}
+} 
+/* end media query 1180px */
