@@ -17,6 +17,7 @@ h1 {
 	font-weight: 600;
 	margin: 100px 0 20px;
 	white-space: nowrap;
+    letter-spacing: -0.03em;
 }
 h2, h3 {
 	font-family: 'Open Sans', sans-serif;
@@ -44,9 +45,12 @@ a {
 	font-family: 'Open Sans', sans-serif;
 	color: #1d7fa8;
 	text-decoration: none;
+	border-bottom: 2px solid #d44619;
+	transition: 0.3s all;
 }
 a:hover, a:focus, a:active {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #d44619;
 }
 
 /* header */
@@ -88,6 +92,28 @@ header p.subtitle {
 	font-weight: 400;
 }
 
+/* nav */
+.main-navigation {
+    float: right;
+}
+.menu ul {
+	margin: 0 auto;
+}
+.menu li {
+	border: none;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+}
+.menu a {
+	color: white;
+	border: none;
+}
+.menu a:hover, .menu a:active, .menu a:focus {
+	color: white;
+	border-bottom: 2px solid $a11yRed;
+}
+
 /* sections */
 section {
 	padding: 40px;
@@ -104,6 +130,21 @@ section .textWrapper {
 .travel h3 {
 	padding-bottom: 30px;
 }
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .partners {
 	padding-top: 0;
 }
@@ -134,9 +175,11 @@ li {
     -ms-flex-align: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 4vw 0;
 }
 .logo {
 	width: 100%;
+	padding: 10px 20px;
 }
 
 /* footer */
@@ -152,14 +195,31 @@ footer p {
     display: inline-block;
 }
 
+/* speakers page */
+.speakersPage header {
+	min-height: auto;
+}
+.speakersPage h1 {
+	color: #60A4C5;
+	margin: 0;
+	position: relative;
+}
+.speakersPage h1:before {
+	content: '/';
+	position: absolute;
+	left: -75px;
+	color: #d44619;
+}
+
 @media (max-width: 1180px) {
 	h1 {
 		font-size: 9.5vw; 
 		margin: 8vw 0 6.5vw;
 	}
 
-	p {
+	p, a {
 		font-size: 2.55vw;
+		line-height: 4vw;
 	}
 
 	header {
@@ -176,5 +236,57 @@ footer p {
 	    line-height: 4.5vw;
 	    padding: 6vw 0 8vw;
 	}
+	.speakersPage header {
+		min-height: auto;
+	}
 } 
 /* end media query 1180px */
+
+@media (max-width: 580px) {
+	header .text-wrapper {
+		width: 100%;
+	    padding: 0 10.5vw;
+	}
+
+	section {
+		padding: 8vw 10.5vw;
+	}
+
+	section .textWrapper {
+		width: 100%;
+	}
+
+	h2, h3 {
+		font-size: 6vw;
+	}
+
+	p, a {
+		font-size: 4.6vw;
+		line-height: 6.5vw;
+	}
+	.logoContainer {
+		text-align: center;
+	}
+	.logoContainer img {
+		left: 0;
+	}
+	.main-navigation {
+	    float: none;
+	}
+	.menu ul {
+		display: flex;
+		justify-content: space-around;	
+	}
+	.menu li {
+		float: none;
+	}
+	.menu a {
+
+	}
+
+	footer p {
+		left: initial;
+	    padding: 10px 8vw 10px;
+	}
+}
+/* end media query 580px */
