@@ -4,6 +4,16 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 html, body {
 	margin: 0;
@@ -31,7 +41,7 @@ h2:before, h3:before {
 	content: '/';
 	position: absolute;
 	left: -25px;
-	color: #1d7fa8;
+	color: #025B9F;
 }
 p {
 	color: #333;
@@ -43,7 +53,7 @@ p {
 a {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	color: #1d7fa8;
+	color: #025B9F;
 	text-decoration: none;
 	border-bottom: 2px solid #d44619;
 	transition: 0.3s all;
@@ -55,14 +65,14 @@ a:hover, a:focus, a:active {
 
 /* header */
 header {
-	background: #1d7fa8 url(assets/header_background.png);
+	background: #025B9F url(assets/header_background.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 	text-align: center;
 	background-size: 150%;
 }
 .logoContainer {
-	border-bottom: 3px solid #60A4C5;
+	border-bottom: 3px solid #025B9F;
 	padding: 15px;
 	text-align: left;	
 }
@@ -95,6 +105,8 @@ header p.subtitle {
 /* nav */
 .main-navigation {
     float: right;
+    position: relative;
+    right: 5%;
 }
 .menu ul {
 	margin: 0 auto;
@@ -106,12 +118,12 @@ header p.subtitle {
     position: relative;
 }
 .menu a {
-	color: white;
+	color: black;
 	border: none;
 }
 .menu a:hover, .menu a:active, .menu a:focus {
-	color: white;
-	border-bottom: 2px solid $a11yRed;
+	color: #025B9F;
+	border-bottom: 2px solid #d44619;
 }
 
 /* sections */
@@ -123,7 +135,7 @@ section .textWrapper {
 	margin: 0 auto;
 }
 
-.event {
+.event, main {
 	background: #EDF5F8;
 }
 
@@ -198,9 +210,10 @@ footer p {
 /* speakers page */
 .speakersPage header {
 	min-height: auto;
+	background: white;
 }
 .speakersPage h1 {
-	color: #60A4C5;
+	color: #025B9F;
 	margin: 0;
 	position: relative;
 }
@@ -209,6 +222,24 @@ footer p {
 	position: absolute;
 	left: -75px;
 	color: #d44619;
+}
+.speakersPage h2 {
+	margin-bottom: 20px;
+}
+.speakersPage .speaker img {
+	max-width: 170px;
+	float: left;
+	margin: 0 20px 20px 0;
+	border-radius: 50%;
+}
+.speakersPage p {
+	margin: 0 auto;
+}
+.speakersPage .subtitle {
+    margin: 20px auto 60px;
+}
+.speakersPage .speaker {
+	margin-bottom: 40px;
 }
 
 @media (max-width: 1180px) {
