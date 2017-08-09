@@ -131,7 +131,7 @@ section {
 	padding: 40px;
 }
 section .textWrapper {
-	width: 60%;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -208,16 +208,16 @@ footer p {
 }
 
 /* speakers page */
-.speakersPage header {
+.speakersPage header, .schedulePage header{
 	min-height: auto;
 	background: white;
 }
-.speakersPage h1 {
+.speakersPage h1, .schedulePage h1 {
 	color: #025B9F;
 	margin: 0;
 	position: relative;
 }
-.speakersPage h1:before {
+.speakersPage h1:before, .schedulePage h1:before {
 	content: '/';
 	position: absolute;
 	left: -75px;
@@ -225,6 +225,9 @@ footer p {
 }
 .speakersPage h2 {
 	margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    left: 25px;
 }
 .speakersPage .speaker img {
 	max-width: 170px;
@@ -241,6 +244,56 @@ footer p {
 .speakersPage .speaker {
 	margin-bottom: 40px;
 }
+.speakersPage .speaker h3 {
+	font-size: 16px;
+	color: #025B9F;
+    margin-top: 30px;
+    font-weight: 800;
+}
+.speakersPage .speaker h3:before {
+	display: none;
+}
+
+/* SCHEDULE PAGE */
+.scheduleList {
+	border-left: 1px solid black;
+	padding: 0 20px;
+}
+.scheduleList p {
+	display: inline-block;  
+	margin: 0;    
+	position: relative;	
+}
+.scheduleList .location {
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.scheduleList h3 {
+	color: #025B9F;
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.scheduleList h3:before {
+	display: none;
+}
+.scheduleList .location:before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #025B9F;
+    top: 4px;
+}
+.scheduleList .location__break {
+	margin-bottom: 20px;
+}
+.scheduleList .location__break:before {
+	background: #025B9F;
+}
 
 @media (max-width: 1180px) {
 	h1 {
@@ -248,7 +301,7 @@ footer p {
 		margin: 8vw 0 6.5vw;
 	}
 
-	p, a {
+	p, a, .speakersPage .speaker h3 {
 		font-size: 2.55vw;
 		line-height: 4vw;
 	}
@@ -291,7 +344,7 @@ footer p {
 		font-size: 6vw;
 	}
 
-	p, a {
+	p, a, .speakersPage .speaker h3 {
 		font-size: 4.6vw;
 		line-height: 6.5vw;
 	}
@@ -313,6 +366,11 @@ footer p {
 	}
 	.menu a {
 
+	}
+	.speakersPage .speaker img {
+		float: none;
+	    margin: 0 auto 20px;
+	    display: flex;	
 	}
 
 	footer p {
