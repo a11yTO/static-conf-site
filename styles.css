@@ -250,6 +250,10 @@ footer p {
 	margin: 0;
 	position: relative;
 }
+.conductPage h1 {
+	line-height: 0.9em;
+	padding: 20px 0;
+}
 .speakersPage h1:before, .schedulePage h1:before, .organizersPage h1:before, .conductPage h1:before {
 	content: '/';
 	position: absolute;
