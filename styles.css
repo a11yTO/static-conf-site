@@ -29,7 +29,7 @@ h1 {
 	white-space: nowrap;
     letter-spacing: -0.03em;
 }
-h2, h3 {
+h2, h3, h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	margin: 0;
@@ -37,11 +37,19 @@ h2, h3 {
 	color: #d44619;
 	font-size: 30px;
 }
+h4 {
+	font-size: 24px;
+	padding-top: 24px;
+}
 h2:before, h3:before {
 	content: '/';
 	position: absolute;
 	left: -25px;
 	color: #025B9F;
+}
+.speakersPage h2 {
+    margin-bottom: 20px;
+    position: relative;
 }
 p {
 	color: #333;
@@ -72,13 +80,14 @@ header {
 	background-size: 150%;
 }
 .logoContainer {
+	background: #fff;
 	border-bottom: 3px solid #025B9F;
 	padding: 15px;
 	text-align: left;	
 }
 .logoContainer img {
 	position: relative;
-    left: 17%;
+    left: 5%;
 }
 header .text-wrapper {
 	width: 63%;
@@ -125,13 +134,24 @@ header p.subtitle {
 	color: #025B9F;
 	border-bottom: 2px solid #d44619;
 }
+.buyTickets a {
+	background: #025B9F;
+	border-radius: 25px;
+	color: #fff;
+	padding: 8px 15px;
+	white-space: nowrap;
+}
+.buyTickets a:hover, .buyTickets a:active, .buyTickets a:focus {
+	border: 0;
+	color: #fff;
+}
 
 /* sections */
 section {
 	padding: 40px;
 }
 section .textWrapper {
-	width: 75%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -140,6 +160,12 @@ section .textWrapper {
 }
 
 .travel h3 {
+	padding-bottom: 30px;
+}
+.talk {
+	padding-bottom: 10px;
+}
+.talkDesc {
 	padding-bottom: 30px;
 }
 
@@ -156,8 +182,12 @@ section .textWrapper {
     width: 100% !important;
     height: 100% !important;
 }
-
+.travel,
 .partners {
+	background: #fff;
+}
+
+.home .partners {
 	padding-top: 0;
 }
 
@@ -193,6 +223,9 @@ li {
 	width: 100%;
 	padding: 10px 20px;
 }
+.twitterHandle {
+	font-size: 16px;
+}
 
 /* footer */
 footer {
@@ -203,21 +236,21 @@ footer p {
     margin: 0;
     padding: 10px 0 30px;
     position: relative;
-    left: 17%;
+    left: 5%;
     display: inline-block;
 }
 
 /* speakers page */
-.speakersPage header, .schedulePage header{
+.speakersPage header {
 	min-height: auto;
 	background: white;
 }
-.speakersPage h1, .schedulePage h1 {
+.speakersPage h1, .schedulePage h1, .organizersPage h1 {
 	color: #025B9F;
 	margin: 0;
 	position: relative;
 }
-.speakersPage h1:before, .schedulePage h1:before {
+.speakersPage h1:before, .schedulePage h1:before, .organizersPage h1:before {
 	content: '/';
 	position: absolute;
 	left: -75px;
@@ -225,14 +258,22 @@ footer p {
 }
 .speakersPage h2 {
 	margin-bottom: 20px;
-    display: inline-block;
-    position: relative;
-    left: 25px;
+} 
+.speakersPage .talk {
+	/*border-top: 2px solid #fff;*/
+	border-top: 1px solid #025B9F;
+	padding-top: 40px;
+}
+.speakersPage .speaker {
+	min-height: 170px;
+	padding: 0 0 0 200px;
+	position: relative;
 }
 .speakersPage .speaker img {
 	max-width: 170px;
-	float: left;
-	margin: 0 20px 20px 0;
+	position: absolute;
+	top: 10px;
+	left: 0;
 	border-radius: 50%;
 }
 .speakersPage p {
@@ -244,16 +285,6 @@ footer p {
 .speakersPage .speaker {
 	margin-bottom: 40px;
 }
-.speakersPage .speaker h3 {
-	font-size: 16px;
-	color: #025B9F;
-    margin-top: 30px;
-    font-weight: 800;
-}
-.speakersPage .speaker h3:before {
-	display: none;
-}
-
 /* SCHEDULE PAGE */
 .scheduleList {
 	border-left: 1px solid black;
@@ -295,20 +326,42 @@ footer p {
 	background: #025B9F;
 }
 
+/*organizers page*/
+.organizersList {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.organizersPage .organizer {
+	text-align: center;
+	margin: 60px 20px;
+}
+.organizersPage .organizer p {
+	margin: 0;
+}
+.organizersPage .organizer img {
+	max-width: 170px;
+	border-radius: 50%;
+}
+
 @media (max-width: 1180px) {
 	h1 {
 		font-size: 9.5vw; 
 		margin: 8vw 0 6.5vw;
 	}
 
-	p, a, .speakersPage .speaker h3 {
+	p, a {
 		font-size: 2.55vw;
 		line-height: 4vw;
 	}
-
+/*
 	header {
 		min-height: 35vw;
-	}
+	}*/
 
 	header p {
 		font-size: 4.5vw;
@@ -323,7 +376,18 @@ footer p {
 	.speakersPage header {
 		min-height: auto;
 	}
-} 
+	.speakersPage .speaker {
+		padding: 0;
+	}
+	.speakersPage .speaker img {
+		max-width: 220px;
+		padding: 20px 0;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		top: 0;
+	}
+}
 /* end media query 1180px */
 
 @media (max-width: 580px) {
@@ -344,7 +408,7 @@ footer p {
 		font-size: 6vw;
 	}
 
-	p, a, .speakersPage .speaker h3 {
+	p, a {
 		font-size: 4.6vw;
 		line-height: 6.5vw;
 	}
@@ -366,11 +430,6 @@ footer p {
 	}
 	.menu a {
 
-	}
-	.speakersPage .speaker img {
-		float: none;
-	    margin: 0 auto 20px;
-	    display: flex;	
 	}
 
 	footer p {
