@@ -245,12 +245,12 @@ footer p {
 	min-height: auto;
 	background: white;
 }
-.speakersPage h1, .schedulePage h1, .organizersPage h1 {
+.speakersPage h1, .schedulePage h1, .organizersPage h1, .conductPage h1 {
 	color: #025B9F;
 	margin: 0;
 	position: relative;
 }
-.speakersPage h1:before, .schedulePage h1:before, .organizersPage h1:before {
+.speakersPage h1:before, .schedulePage h1:before, .organizersPage h1:before, .conductPage h1:before {
 	content: '/';
 	position: absolute;
 	left: -75px;
