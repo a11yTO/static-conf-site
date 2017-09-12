@@ -226,6 +226,12 @@ li {
 .twitterHandle {
 	font-size: 16px;
 }
+.llc {
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: -10px;
+	text-align: center;
+}
 
 /* footer */
 footer {
@@ -299,7 +305,7 @@ footer p {
 	margin: 0;    
 	position: relative;	
 }
-.scheduleList .location {
+.scheduleList .speaker {
 	text-transform: uppercase;
 	font-weight: 800;
 }
@@ -312,7 +318,7 @@ footer p {
 .scheduleList h3:before {
 	display: none;
 }
-.scheduleList .location:before {
+.scheduleList .speaker:before {
     content: '';
     position: absolute;
     left: -28px;
@@ -326,7 +332,7 @@ footer p {
 .scheduleList .location__break {
 	margin-bottom: 20px;
 }
-.scheduleList .location__break:before {
+.scheduleList .break:before {
 	background: #025B9F;
 }
 
@@ -342,7 +348,7 @@ footer p {
 }
 .organizersPage .organizer {
 	text-align: center;
-	margin: 60px 20px;
+	margin: 20px;
 }
 .organizersPage .organizer p {
 	margin: 0;
