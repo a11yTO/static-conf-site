@@ -19,6 +19,10 @@ html, body {
 	margin: 0;
 }
 
+.branding {
+    width: 200px;
+}
+
 /* fonts */
 h1 {
 	color: white;
