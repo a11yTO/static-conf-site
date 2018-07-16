@@ -180,6 +180,7 @@ section .textWrapper {
   overflow: hidden; 
   max-width: 100%; 
   height: auto; 
+  margin: 40px 0;
 } 
 .embed-container iframe, 
 .embed-container object, 
