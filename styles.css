@@ -352,6 +352,7 @@ footer p {
 }
 .scheduleList li {
   border: 0;
+  margin-bottom: 40px;
 }
 .scheduleList .event:before {
   content: "";
@@ -362,17 +363,14 @@ footer p {
   height: 16px;
   border-radius: 50%;
   border: 1px solid #025b9f;
-  top: 5px;
+  top: 8px;
   background-color: #025b9f;
-}
-.scheduleList h3,
-.scheduleList p {
-  display: inline;
 }
 .scheduleList h3 {
   color: #025b9f;
   font-size: 18px;
   font-weight: 800;
+  line-height: 30px;
   text-transform: capitalize;
 }
 .scheduleList a {
@@ -384,9 +382,6 @@ footer p {
 }
 .scheduleList .time {
   position: relative;
-}
-.scheduleList .time:before {
-  content: "/ ";
 }
 .scheduleList .speaker,
 .scheduleList .speakers {
