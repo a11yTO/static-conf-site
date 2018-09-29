@@ -362,9 +362,17 @@ footer p {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 1px solid #025b9f;
   top: 8px;
+}
+.session:before {
+  border: 1px solid #025b9f;
   background-color: #025b9f;
+}
+
+.break:before,
+.lunch:before {
+  border: 1px solid #d44619;
+  background-color: #d44619;
 }
 .scheduleList h3 {
   color: #025b9f;
@@ -390,9 +398,8 @@ footer p {
 }
 .scheduleList .break,
 .scheduleList .lunch {
-  color: #333;
+  color: #d44619;
   font-size: 16px;
-  font-weight: normal;
 }
 
 /*organizers page*/
