@@ -368,7 +368,6 @@ footer p {
   border: 1px solid #025b9f;
   background-color: #025b9f;
 }
-
 .break:before,
 .lunch:before {
   border: 1px solid #d44619;
@@ -379,6 +378,7 @@ footer p {
   font-size: 18px;
   font-weight: 800;
   line-height: 30px;
+  margin-bottom: 12px;
   text-transform: capitalize;
 }
 .scheduleList a {
@@ -394,7 +394,6 @@ footer p {
 .scheduleList .speaker,
 .scheduleList .speakers {
   display: block;
-  margin-top: -5px;
 }
 .scheduleList .break,
 .scheduleList .lunch {
