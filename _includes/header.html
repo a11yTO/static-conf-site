@@ -1,0 +1,53 @@
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/favicon.png" /> 
+  <title>{% if page.title %}{{ page.title }} &ndash; #{{ site.title }}{% else %}#{{ site.title }} &ndash; {{ site.description }}{% endif %}</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+  <meta property="og:type" content="website" />
+  <meta itemprop="name" content="#{{ site.title }}" />
+  <meta itemprop="description" content="{{ page.description }}" />
+  <meta property="og:site_name" content="#{{ site.title }}" />
+  <meta property="og:title" content="#{{ site.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:url" content="{{ site.url }}" />
+  <meta name="twitter:domain" content="{{ site.url }}" />
+</head>
+
+<body{% if page.id %} class="{{ page.id }}"{% endif %}>
+
+  <header class="site-header">
+    <div class="event-branding clearfix">
+      {%- include logo.html -%}
+      <nav id="site-navigation" class="main-navigation">
+        <ul class="nav-menu">
+          <li>
+            <a {% if page.id == 'home' %}class="current-page"{% endif %} href="/">Home</a>
+          </li>
+          <!-- <li class="buyTickets">
+            <a href="https://a11ytoconf2018.eventbrite.ca" target="_blank">
+              Buy Tickets</a>
+          </li> -->
+        </ul>
+      </nav>
+    </div>
+    {% if page.id == 'home' %}
+    <div class="event-detail">
+      <h1>#{{ site.title }}</h1>
+      <p class="date">{{ site.event-date }}</p>
+      <p class="location">Toronto, Ontario</p>
+      <p class="subtitle">{{ site.description }}</p>
+    </div>
+    {% endif %}
+  </header>
+
