@@ -41,7 +41,6 @@ h1 {
   font-size: 138px;
   font-weight: 600;
   margin: 100px 0 20px;
-  white-space: nowrap;
   letter-spacing: -0.03em;
 }
 .conduct h1 {
@@ -296,9 +295,7 @@ footer {
 footer p {
   color: $main-font-color;
   margin: 0;
-  padding: 30px 0 40px;
-  position: relative;
-  left: 7%;
+  padding: 30px 5% 40px;
   display: inline-block;
 }
 
