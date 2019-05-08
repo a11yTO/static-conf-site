@@ -85,8 +85,8 @@ a:active {
 
 /* header */
 header {
+  background: #025b9f;
   text-align: center;
-  background-size: 150%;
 }
 .logoContainer {
   background: #fff;
