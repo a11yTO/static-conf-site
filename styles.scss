@@ -95,6 +95,20 @@ a:active {
   border-bottom: 0;
   color: $secondary-color;
 }
+.buyTickets a {
+  background: $brand-color;
+  border-radius: 25px;
+  color: #fff !important;
+  font-weight: bold;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+.buyTickets a:hover,
+.buyTickets a:active,
+.buyTickets a:focus {
+  border: 0;
+  color: #fff;
+}
 .site-header a.current-page {
   border-bottom: 2px solid $secondary-color;
   color: $secondary-color;
