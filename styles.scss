@@ -67,6 +67,9 @@ h3:before {
   left: -25px;
   color: $accent-color;
 }
+.speakers .page h3:before {
+  content: "";
+}
 .speakersPage h2 {
   margin-bottom: 20px;
   position: relative;
@@ -480,6 +483,9 @@ footer p {
     margin: 0 auto;
     position: relative;
     top: 0;
+  }
+  .speakers .page h3:before {
+    content: "/";
   }
 }
 /* end media query 1180px */
