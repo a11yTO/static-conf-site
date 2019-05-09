@@ -67,6 +67,7 @@ h3:before {
   left: -25px;
   color: $accent-color;
 }
+.speakers .page h2:before,
 .speakers .page h3:before {
   content: "";
 }
@@ -354,7 +355,7 @@ footer p {
 }
 .speakers .speaker-detail,
 .talks .speaker-detail {
-  min-height: 180px;
+  min-height: 200px;
   padding: 0 0 0 200px;
   position: relative;
 }
@@ -498,6 +499,7 @@ footer p {
     position: relative;
     top: 0;
   }
+  .speakers .page h2:before,
   .speakers .page h3:before {
     content: "/";
   }
