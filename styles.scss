@@ -506,7 +506,7 @@ footer p {
 }
 /* end media query 1180px */
 
-@media (max-width: 620px) {
+@media (max-width: 750px) {
   header .text-wrapper {
     width: 100%;
     padding: 0 10.5vw;
@@ -525,11 +525,6 @@ footer p {
     font-size: 6vw;
   }
 
-  p,
-  a {
-    font-size: 4.6vw;
-    line-height: 6.5vw;
-  }
   .event-branding {
     text-align: center;
     padding: 15px 2% 0;
@@ -550,10 +545,10 @@ footer p {
     padding: 25px 8vw;
   }
 }
-/* end media query 620px */
+/* end media query 750px */
 
 
-@media (max-width: 340px) {
+@media (max-width: 450px) {
   .nav-menu {
     display: block;
   }
