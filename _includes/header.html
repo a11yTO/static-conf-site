@@ -1,6 +1,9 @@
 
 <head>
   <meta charset="utf-8">
+{% if jekyll.environment == 'stage' %}
+  <meta name="robots" content="noindex">
+{% endif %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/favicon.png" /> 
@@ -25,7 +28,9 @@
 </head>
 
 <body{% if page.id %} class="{{ page.id }}"{% endif %}>
-
+{% if jekyll.environment == 'stage' %}
+  <p class="staged">This is a preview of our Conf. site. <a href="https://conf.a11yto.com">View the live content</a>.</p>
+{% endif %}
   <header class="site-header">
     <div class="event-branding clearfix">
       {%- include logo.html -%}
