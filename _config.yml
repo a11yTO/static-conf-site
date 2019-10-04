@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: a11yTO Conf
+identifier: conf
 email: info@a11yto.com
 description: A curated playlist of talks, focused on digital accessibility
 event-date: October 24 and 25, 2019
