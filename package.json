@@ -1,20 +1,20 @@
 {
-    "name": "a11yTO Conf",
-    "title": "#a11yTO Conf",
-    "description": "A curated playlist of talks, focused on digital accessibility",
-    "version": "1.0.0",
-    "homepage": "https://conf.a11yto.com/",
-    "author": {
-        "name": "#a11yTO Team",
-        "email": "info@a11yto.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/a11yTO/static-conf-site"
-    },
-    "devDependencies": {
-        "grunt": "^1.0.4",
-        "grunt-contrib-sass": "^1.0.0",
-        "grunt-contrib-watch": "^1.1.0"
-    }
+  "name": "a11yTOConf",
+  "title": "#a11yTOConf",
+  "description": "A curated playlist of talks, focused on digital accessibility",
+  "version": "1.0.0",
+  "homepage": "https://conf.a11yto.com/",
+  "author": {
+    "name": "#a11yTO Team",
+    "email": "info@a11yto.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a11yTO/static-conf-site"
+  },
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
 }
