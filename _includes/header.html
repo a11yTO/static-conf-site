@@ -31,8 +31,8 @@
   {% if jekyll.environment == 'stage' %}<p class="staged">This is a preview of our Conf. site. <a href="https://conf.a11yto.com">View the live content</a>.</p>{% endif %}
   <header class="site-header">
     {%- include logo.html -%}
-    <nav id="site-navigation" class="main-navigation">
-      <ul class="nav-menu">
+    <nav id="site-navigation" class="main-nav-menu">
+      <ul class="list">
         <li>
           <a {% if page.id == 'home' %}class="current-page" {% endif %} href="/">Home</a>
         </li>
