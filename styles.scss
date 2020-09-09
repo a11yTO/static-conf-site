@@ -255,7 +255,7 @@ a.current-page {
   text-align: center;
 }
 .branding {
-  height: 4em;
+  height: 4.75em;
   padding: 0.33em 0;
   width: auto;
 }
@@ -328,6 +328,7 @@ a.current-page {
       justify-content: space-between;
       .branding {
         align-self: flex-start;
+        height: 4.25em;
       }
       .main-nav-menu .nav-list {
         margin: 0.75em 0 -0.5em;
