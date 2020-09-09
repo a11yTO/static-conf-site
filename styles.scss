@@ -296,7 +296,7 @@ a.current-page {
     flex-direction: column;
     justify-content: center;
   }
-  .main-nav-menu .list {
+  .main-nav-menu .nav-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,7 +312,7 @@ a.current-page {
     }
   }
   @media screen and (min-width: $main-nav-mid-breakpoint) {
-    .main-nav-menu .list {
+    .main-nav-menu .nav-list {
       flex-direction: row;
       .tickets {
         margin: 0 0.5em;
@@ -329,7 +329,7 @@ a.current-page {
       .branding {
         align-self: flex-start;
       }
-      .main-nav-menu .list {
+      .main-nav-menu .nav-list {
         margin: 0.75em 0 -0.5em;
       }
     }
