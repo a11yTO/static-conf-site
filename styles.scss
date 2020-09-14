@@ -1,29 +1,29 @@
 /* -------------------------------------------------------------------------
  * #a11yTO Global Sass Variables 
  * ------------------------------------------------------------------------- */
- $a11yto-brand-color: #000000;
- $meetups-brand-color: #b30a2e;
- $camp-brand-color: #076800;
- $conf-brand-color: #025b9f;
- $irl-brand-color: #6C2E7D;
- $gaming-brand-color: #d43d27;
- 
- $brand-color: $conf-brand-color;
- $main-font-color: #222222;
- $inverted-font-color: #ffffff;
- $background: #ffffff;
- $secondary-color: #025b9f;
- $secondary-background: #edf5f8;
- $error: #f00;
- 
- $base-font-size: 112.5%;
- 
- $main-font-stack: "Open Sans", sans-serif;
- $heading-font-stack: "League Spartan", "Open Sans", sans-serif;
- $link-color: $secondary-color;
- 
- $main-nav-mid-breakpoint: 38em;
- $main-nav-wide-breakpoint: 58em;
+$a11yto-brand-color: #000000;
+$meetups-brand-color: #b30a2e;
+$camp-brand-color: #076800;
+$conf-brand-color: #025b9f;
+$irl-brand-color: #6C2E7D;
+$gaming-brand-color: #d43d27;
+
+$brand-color: $conf-brand-color;
+$main-font-color: #222222;
+$inverted-font-color: #ffffff;
+$background: #ffffff;
+$secondary-color: #025b9f;
+$secondary-background: #edf5f8;
+$error: #f00;
+
+$base-font-size: 112.5%;
+
+$main-font-stack: "Open Sans", sans-serif;
+$heading-font-stack: "League Spartan", "Open Sans", sans-serif;
+$link-color: $secondary-color;
+
+$main-nav-mid-breakpoint: 38em;
+$main-nav-wide-breakpoint: 58em;
 
 /* -------------------------------------------------------------------------
  * Global reset
@@ -184,11 +184,11 @@ ol {
 *:focus,
 a:focus {
   outline: 2px solid black;
+  text-decoration: none;
 }
 .main-nav-menu {
   a {
     color: $main-font-color;
-    border-bottom: 0;
     padding: 0.33em;
     text-decoration: none;
   }
@@ -205,9 +205,9 @@ a:focus {
   }
 }
 a.current-page {
-  border: 0;
   color: $secondary-color;
   font-weight: bold;
+  text-decoration: underline;
 }
 .social-icons {
   a {
@@ -219,26 +219,25 @@ a.current-page {
     text-decoration-line: underline;
     text-decoration-color: $brand-color;
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.3em;
-    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
   }
   .main-nav-menu a,
   .tickets a,
   .branded-events a {
     text-decoration-line: none;
   }
-  a.current-page {
-    border: 0;
-    text-decoration-line: underline;
-  }
   .main-nav-menu a.current-page {
-    border: 0;
+    text-decoration-color: $brand-color; 
   }
   footer a.current-page {
     text-decoration-line: none;
   }
+  .staged a {
+    color: $inverted-font-color;
+    text-decoration-color: $inverted-font-color;
+  }
 }
- /* End link styles */
+/* End link styles */
 
 /* -------------------------------------------------------------------------
  * Page structure & styles
@@ -749,10 +748,9 @@ button {
   width: 100%;
 }
 .staged a {
-  border-bottom: 1px solid white;
   color: $inverted-font-color;
 }
 .staged a:focus {
-  border: 0;
+  text-decoration: none;
   outline: 2px solid white;
 }
