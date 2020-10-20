@@ -22,8 +22,8 @@ $main-font-stack: "Open Sans", sans-serif;
 $heading-font-stack: "League Spartan", "Open Sans", sans-serif;
 $link-color: $secondary-color;
 
-$main-nav-mid-breakpoint: 42em;
-$main-nav-wide-breakpoint: 60em;
+$main-nav-mid-breakpoint: 45em;
+$main-nav-wide-breakpoint: 65em;
 
 /* -------------------------------------------------------------------------
  * Global reset
@@ -281,6 +281,7 @@ a.current-page {
   }
   .twitter-icon,
   .facebook-icon,
+  .youtube-icon,
   .instagram-icon,
   .linkedin-icon {
     background: $background;
