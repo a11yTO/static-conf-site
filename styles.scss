@@ -14,7 +14,7 @@ $inverted-font-color: #ffffff;
 $background: #ffffff;
 $secondary-color: #025b9f;
 $secondary-background: #edf5f8;
-$error: #f00;
+$attention: #b30a2e;
 
 $base-font-size: 112.5%;
 
@@ -523,7 +523,7 @@ textarea {
   height: 10em;
 }
 .required {
-  color: $error;
+  color: $attention;
   font-size: 75%;
   font-style: italic;
 }
@@ -736,7 +736,8 @@ button {
 /* -------------------------------------------------------------------------
  * Staged site structure & styles
  * ------------------------------------------------------------------------- */
-.staged {
+.staged,
+.attention {
   background: black;
   color: $inverted-font-color;
   font-size: 75%;
@@ -746,10 +747,16 @@ button {
   text-align: center;
   width: 100%;
 }
-.staged a {
-  color: $inverted-font-color;
+.attention {
+  background: $attention;
 }
-.staged a:focus {
+.staged a,
+.attention a {
+  color: $inverted-font-color;
+  text-decoration-color: $inverted-font-color;
+}
+.staged a:focus,
+.attention a:focus {
   text-decoration: none;
   outline: 2px solid white;
 }
