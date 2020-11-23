@@ -206,7 +206,7 @@ main {
 
 .google-maps {
   position: relative;
-  padding-bottom: 75%; // This is the aspect ratio
+  padding-bottom: 75%;
   height: 0;
   overflow: hidden;
 }
@@ -500,8 +500,6 @@ footer p {
   .menu li {
     float: none;
   }
-  .menu a {
-  }
 
   footer p {
     left: initial;
@@ -509,3 +507,32 @@ footer p {
   }
 }
 /* end media query 580px */
+
+/* -------------------------------------------------------------------------
+ * Staged site structure & styles
+ * ------------------------------------------------------------------------- */
+ .staged,
+ .attention {
+   background: black;
+   color: #fff;
+   font-size: 16px;
+   line-height: 1.1;
+   margin: 0;
+   padding: 0.5em;
+   text-align: center;
+   width: 100%;
+ }
+ .attention {
+   background: #b30a2e;
+ }
+ .staged a,
+ .attention a {
+   border:0;
+   color: #fff;
+   text-decoration: underline;
+ }
+ .staged a:focus,
+ .attention a:focus {
+   text-decoration: none;
+   outline: 2px solid white;
+ }
