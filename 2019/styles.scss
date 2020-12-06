@@ -710,9 +710,9 @@ button {
  }
  .staged a,
  .attention a {
-   border:0;
-   color: #fff;
-   text-decoration: underline;
+   border-color: $inverted-font-color;
+   color: $inverted-font-color;
+   text-decoration-color: $inverted-font-color;
  }
  .staged a:focus,
  .attention a:focus {
