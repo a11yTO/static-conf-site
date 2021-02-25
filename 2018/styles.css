@@ -509,28 +509,25 @@ footer p {
 /* end media query 580px */
 
 /* -------------------------------------------------------------------------
- * Staged site structure & styles
+ * Attention banner structure & styles
  * ------------------------------------------------------------------------- */
- .staged,
  .attention {
-   background: black;
-   color: #fff;
-   line-height: 1.1;
-   margin: 0;
-   padding: 1em;
-   text-align: center;
-   width: 100%;
- }
- .attention {
-  background: #b30a2e;
- }
- .staged a,
- .attention a {
-   border-color: #fff;
-   color: #fff;
- }
- .staged a:focus,
- .attention a:focus {
-   text-decoration: none;
-   outline: 2px solid white;
- }
+  background: black;
+  color: white;
+  font-size: 85%;
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+.attention a {
+  border-color: white;
+  color: white;
+  white-space: nowrap;
+}
+.attention a:focus {
+  text-decoration: none;  
+  outline: 2px solid white;
+}
