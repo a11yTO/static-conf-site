@@ -206,7 +206,7 @@ main {
 
 .google-maps {
   position: relative;
-  padding-bottom: 75%; // This is the aspect ratio
+  padding-bottom: 75%;
   height: 0;
   overflow: hidden;
 }
@@ -500,8 +500,6 @@ footer p {
   .menu li {
     float: none;
   }
-  .menu a {
-  }
 
   footer p {
     left: initial;
@@ -509,3 +507,27 @@ footer p {
   }
 }
 /* end media query 580px */
+
+/* -------------------------------------------------------------------------
+ * Attention banner structure & styles
+ * ------------------------------------------------------------------------- */
+ .attention {
+  background: black;
+  color: white;
+  font-size: 85%;
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+.attention a {
+  border-color: white;
+  color: white;
+  white-space: nowrap;
+}
+.attention a:focus {
+  text-decoration: none;  
+  outline: 2px solid white;
+}

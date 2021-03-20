@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="conf">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <title>Archived: Talks &ndash; #a11yTO Conf</title>
+  <link rel="stylesheet" href="/2020/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+  <meta property="og:type" content="website" />
+  <meta itemprop="name" content="#a11yTO Conf" />
+  <meta itemprop="description" content="Here is our Talks line-up for the 2020 event." />
+  <meta property="og:title" content="#a11yTO Conf" />
+  <meta property="og:description" content="Here is our Talks line-up for the 2020 event." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:image" content="/ogp.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="The #a11yTO Conf logo, blue letters on a white slightly askew rectangle on top of a blue background" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@a11yTO" />
+  <meta name="twitter:title" content="a11yTO Conf" />
+  <meta name="twitter:description" content="Here is our Talks line-up for the 2020 event." />
+  <meta name="twitter:creator" content="@a11yTO" />
+  <meta name="twitter:url" content="http://localhost:4000" />
+  <meta name="twitter:domain" content="http://localhost:4000" />
+</head>
+
+<body class="talks">
+  <p class="attention" role="alert">This is an archived version of our 2020 event. <a href="https://conf.a11yto.com/talks">View the current content</a>.</p>
+
+  <header class="site-header">
+    <div class="branding"><svg id="hashtag_a11yto_conf_logo" class="branding-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690.2 175.2" xml:space="preserve" aria-labelledby="logo" role="img">
+        <title id="logo">#a11yto conf logo</title>
+        <path id="askew_rectangle" transform="rotate(-4.02 225.636 87.583) scale(.99996)" style="fill:#025b9f" d="M4.5 15.3h442.2v144.5H4.5z" />
+        <g id="hashtag_a11yTO">
+          <path style="fill:#fff" d="M30.6 101.1v-9h9.5l1.8-12.4h-8.3v-9h9.5l2.8-19.8h9.7l-2.8 19.8h9.7l2.7-19.8h9.7l-2.7 19.8h7.4v9h-8.7l-1.7 12.4h7.4v9h-8.7l-2.7 19.8h-9.7l2.7-19.8h-9.6l-2.8 19.8h-9.7l2.8-19.8h-8.3zm19.2-9h9.7l1.7-12.4h-9.6l-1.8 12.4zM85.4 85.1c.2-3.3 1-6.1 2.5-8.3 1.5-2.2 3.3-4 5.6-5.3 2.3-1.3 4.8-2.3 7.7-2.9 2.8-.6 5.7-.9 8.5-.9 2.6 0 5.2.2 7.9.6 2.7.4 5.1 1.1 7.3 2.1 2.2 1.1 4 2.5 5.4 4.4 1.4 1.9 2.1 4.4 2.1 7.6v26.9c0 2.3.1 4.6.4 6.7.3 2.1.7 3.7 1.4 4.8h-14.4c-.3-.8-.5-1.6-.7-2.5-.2-.8-.3-1.7-.3-2.5-2.3 2.3-4.9 4-8 4.9-3.1.9-6.2 1.4-9.4 1.4-2.5 0-4.8-.3-6.9-.9-2.1-.6-4-1.5-5.6-2.8-1.6-1.3-2.8-2.9-3.8-4.8-.9-1.9-1.3-4.2-1.3-6.9 0-2.9.5-5.4 1.5-7.2s2.4-3.4 4-4.5 3.5-2 5.6-2.6c2.1-.6 4.2-1 6.4-1.3 2.1-.3 4.2-.6 6.3-.8 2.1-.2 3.9-.5 5.5-.9s2.9-1 3.8-1.8c.9-.8 1.4-1.9 1.3-3.4 0-1.5-.2-2.8-.8-3.6s-1.2-1.6-2-2.1-1.8-.8-2.9-1c-1.1-.2-2.3-.2-3.6-.2-2.8 0-5 .6-6.6 1.8-1.6 1.2-2.5 3.2-2.8 6H85.4zm32.8 10.5c-.6.5-1.4.9-2.2 1.2-.9.3-1.9.5-2.9.8-1 .2-2.1.4-3.2.5-1.1.1-2.3.3-3.4.5s-2.1.5-3.2.8c-1 .3-1.9.8-2.7 1.4-.8.6-1.4 1.3-1.9 2.1-.5.9-.7 2-.7 3.3 0 1.3.2 2.3.7 3.2.5.9 1.1 1.5 1.9 2 .8.5 1.7.9 2.8 1.1 1.1.2 2.2.3 3.3.3 2.8 0 5-.5 6.5-1.4 1.5-.9 2.7-2 3.4-3.4.7-1.3 1.2-2.6 1.4-3.9.2-1.3.2-2.4.2-3.2v-5.3zM157.8 120.9V75.5h-17.6V64.8c2.5.1 4.9-.1 7.1-.5 2.3-.4 4.4-1.2 6.2-2.3 1.8-1.1 3.4-2.5 4.6-4.3 1.3-1.8 2.1-4 2.5-6.7H172v70h-14.2zM202.7 120.9V75.5h-17.6V64.8c2.5.1 4.9-.1 7.1-.5 2.3-.4 4.4-1.2 6.2-2.3 1.8-1.1 3.4-2.5 4.6-4.3 1.3-1.8 2.1-4 2.5-6.7h11.3v70h-14.1zM251.6 136.3c-2.7 1.8-6.5 2.7-11.4 2.7-1.5 0-2.9-.1-4.3-.1-1.4-.1-2.9-.2-4.4-.4v-11.7c1.3.1 2.7.3 4.1.4 1.4.1 2.8.2 4.2.1 1.9-.2 3.2-.9 4.2-2.2.9-1.3 1.3-2.7 1.3-4.2 0-1.1-.2-2.2-.6-3.2l-18.1-48.5h15.1l11.7 35.4h.2l11.3-35.4h14.7L258 127.3c-1.6 4.2-3.7 7.2-6.4 9zM290.6 62.7V49.5h58.5v13.2h-21.4v58.2H312V62.7h-21.4zM353.8 70.6c1.6-4.6 3.9-8.5 6.9-12 3-3.4 6.7-6.1 11.1-8 4.4-1.9 9.3-2.9 14.8-2.9s10.5 1 14.8 2.9c4.3 1.9 8 4.6 11 8 3 3.4 5.3 7.4 6.9 12 1.6 4.6 2.4 9.5 2.4 14.9 0 5.2-.8 10-2.4 14.5s-3.9 8.4-6.9 11.8c-3 3.3-6.7 6-11 7.9s-9.3 2.9-14.8 2.9-10.4-1-14.8-2.9-8.1-4.5-11.1-7.9c-3-3.3-5.3-7.2-6.9-11.8s-2.4-9.4-2.4-14.5c-.1-5.4.8-10.3 2.4-14.9zm14.3 23.6c.7 2.8 1.8 5.4 3.4 7.6 1.5 2.3 3.5 4.1 6 5.5 2.5 1.4 5.5 2 9 2s6.5-.7 9-2c2.5-1.4 4.5-3.2 6-5.5s2.6-4.8 3.3-7.6c.7-2.8 1-5.8 1-8.8 0-3.1-.3-6.2-1-9.1-.7-2.9-1.8-5.5-3.3-7.9-1.5-2.3-3.5-4.1-6-5.5-2.5-1.4-5.5-2-9-2s-6.5.7-9 2c-2.5 1.4-4.5 3.2-6 5.5s-2.7 4.9-3.4 7.9c-.7 2.9-1 6-1 9.1 0 3.1.3 6 1 8.8z" />
+        </g>
+        <g id="Conf">
+          <path style="fill:#025b9f" d="M515.1 68.5c-.9-1.5-2.1-2.8-3.5-3.9s-3-2-4.8-2.7c-1.8-.6-3.6-.9-5.5-.9-3.5 0-6.5.7-9 2-2.5 1.4-4.5 3.2-6 5.5s-2.7 4.9-3.4 7.9c-.7 2.9-1 6-1 9.1 0 3 .3 5.9 1 8.8.7 2.8 1.8 5.4 3.4 7.6 1.5 2.3 3.5 4.1 6 5.5 2.5 1.4 5.5 2 9 2 4.8 0 8.5-1.5 11.2-4.4 2.7-2.9 4.3-6.8 4.9-11.6h15.2c-.4 4.5-1.4 8.5-3.1 12.1-1.7 3.6-3.9 6.7-6.6 9.2-2.7 2.5-5.9 4.5-9.6 5.8-3.7 1.3-7.7 2-12.1 2-5.5 0-10.4-1-14.8-2.9s-8.1-4.5-11.1-7.9c-3-3.3-5.3-7.2-6.9-11.8-1.6-4.5-2.4-9.4-2.4-14.5 0-5.3.8-10.3 2.4-14.9 1.6-4.6 3.9-8.5 6.9-12 3-3.4 6.7-6.1 11.1-8 4.4-1.9 9.3-2.9 14.8-2.9 3.9 0 7.6.6 11.1 1.7s6.6 2.8 9.4 4.9c2.8 2.2 5 4.9 6.8 8.1 1.8 3.2 2.9 6.9 3.4 11h-15.2c0-1.6-.6-3.3-1.6-4.8zM542.2 83.8c1.3-3.4 3.1-6.2 5.4-8.6 2.3-2.4 5.1-4.2 8.4-5.5 3.3-1.3 6.9-2 11-2s7.8.6 11 2c3.3 1.3 6.1 3.1 8.5 5.5 2.3 2.4 4.1 5.2 5.4 8.6 1.3 3.4 1.9 7.1 1.9 11.2s-.6 7.9-1.9 11.2c-1.3 3.3-3.1 6.2-5.4 8.6-2.3 2.4-5.2 4.2-8.5 5.4s-7 1.9-11 1.9c-4.1 0-7.7-.6-11-1.9-3.3-1.3-6.1-3.1-8.4-5.4-2.3-2.4-4.1-5.2-5.4-8.6-1.3-3.3-1.9-7.1-1.9-11.2s.7-7.8 1.9-11.2zm12.9 17.3c.4 2 1.1 3.7 2.1 5.3 1 1.6 2.2 2.8 3.8 3.8 1.6.9 3.6 1.4 6 1.4s4.4-.5 6-1.4c1.6-.9 2.9-2.2 3.9-3.8 1-1.6 1.6-3.3 2-5.3a30.78 30.78 0 0 0 0-12.1c-.4-2-1.1-3.8-2-5.3-1-1.5-2.3-2.8-3.9-3.8s-3.6-1.4-6-1.4-4.4.5-6 1.4c-1.6 1-2.9 2.2-3.8 3.8-1 1.5-1.7 3.3-2.1 5.3a30.78 30.78 0 0 0 0 12.1zM616.5 69.2v7.2h.3c1.8-3 4.1-5.2 7-6.5 2.9-1.4 5.8-2.1 8.8-2.1 3.8 0 6.9.5 9.3 1.6 2.4 1 4.4 2.5 5.8 4.3 1.4 1.8 2.4 4.1 3 6.7.6 2.6.9 5.5.9 8.8V121h-14.2V91.7c0-4.3-.7-7.4-2-9.5-1.3-2.1-3.7-3.1-7.1-3.1-3.9 0-6.7 1.1-8.4 3.4-1.7 2.3-2.6 6.1-2.6 11.4V121H603V69.2h13.5zM656.9 78.7v-9.5h8.5v-4c0-4.6 1.4-8.4 4.3-11.3 2.9-2.9 7.2-4.4 13-4.4 1.3 0 2.5 0 3.8.1 1.3.1 2.5.2 3.7.2v10.6c-1.7-.2-3.4-.3-5.2-.3-1.9 0-3.3.5-4.1 1.4-.8.9-1.2 2.4-1.2 4.6v3.1h9.8v9.5h-9.8v42.2h-14.2V78.7h-8.6z" />
+        </g>
+      </svg></div>
+    <nav id="site-navigation" class="main-nav-menu">
+      <ul class="nav-list">
+        <li>
+          <a href="/2020/">Home</a>
+        </li>
+        <li>
+          <a href="/2020/playlist">Playlist</a>
+        </li>
+        <li>
+          <a class="current-page" href="/2020/talks">Talks</a>
+        </li>
+        <!-- <li class="tickets">
+          <a href="#" target="_blank">Buy Tickets</a>
+        </li> -->
+        <li class="social">
+          <ul class="social-icons">
+            <li><a href="https://twitter.com/a11yto" rel="external" target="_blank"><svg class="twitter-icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>Twitter</title>
+                  <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+                </svg><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://facebook.com/a11yto" rel="external" target="_blank"><svg class="facebook-icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>Facebook</title>
+                  <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"></path>
+                </svg><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUSvg9rwLVocjxErLG5I-EQ" rel="external" target="_blank"><svg class="youtube-icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>YouTube</title>
+                  <path d="M31.681 9.6c0 0-0.313-2.206-1.275-3.175-1.219-1.275-2.581-1.281-3.206-1.356-4.475-0.325-11.194-0.325-11.194-0.325h-0.012c0 0-6.719 0-11.194 0.325-0.625 0.075-1.987 0.081-3.206 1.356-0.963 0.969-1.269 3.175-1.269 3.175s-0.319 2.588-0.319 5.181v2.425c0 2.587 0.319 5.181 0.319 5.181s0.313 2.206 1.269 3.175c1.219 1.275 2.819 1.231 3.531 1.369 2.563 0.244 10.881 0.319 10.881 0.319s6.725-0.012 11.2-0.331c0.625-0.075 1.988-0.081 3.206-1.356 0.962-0.969 1.275-3.175 1.275-3.175s0.319-2.587 0.319-5.181v-2.425c-0.006-2.588-0.325-5.181-0.325-5.181zM12.694 20.15v-8.994l8.644 4.513-8.644 4.481z"></path>
+                </svg><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/a11yto/" rel="external" target="_blank"><svg class="instagram-icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>Instagram</title>
+                  <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+                  <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+                  <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+                </svg><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.linkedin.com/company/a11yto" rel="external" target="_blank"><svg class="linkedin-icon" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>LinkedIn</title>
+                  <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
+                </svg><span class="sr-only">LinkedIn</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+
+      <h1 class="page-title">Talks</h1>
+
+      <section id="finding-root-causes" class="talk">
+        <h2 class="talk-name">Finding Root Causes</h2>
+        <p class="talk-desc">Automated and manual accessibility testing can surface all manner of existing accessibility problems, but it is then left to you to track down the root cause of each bug before you can fix it. Sometimes this is simple, as in the case of an image missing alt text. Other times you are told that your combobox isn't announcing its state or active option, and you spend hours shuffling around ARIA attributes to no avail. We're going to make that process a little easier by looking at tools, tips, and tricks for debugging issues that range from semantics to live regions. Then we'll trace those bug roots a little further and try to find where, in what elements of today's web ecosystem, they really originate from.</p>
+        <section id="SarahHigley" class="speaker-detail clearfix">
+          <h3 class="speaker">Sarah Higley</h3>
+          <img src="/2020/assets/speakers/SarahHigley_400x400.jpg" alt="Headshot of Sarah Higley" />
+          <div class="speaker-bio">
+            <p>Sarah Higley is a web developer who works on accessibility at Microsoft. She has been convincing people to give her money in exchange for code since 2011 and is happiest when working on weird web components. She is always up for listening to or participating in rants about accessibility, the importance of front-end skills, and diversity in tech.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/codingchaos" target="_blank">Connect with Sarah Higley on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="css-with-accessibility-in-mind" class="talk">
+        <h2 class="talk-name">Writing even more CSS with Accessibility in Mind</h2>
+        <p class="talk-desc">What’s the first thing that comes to your mind when you think of “CSS and accessibility”? Maybe text size, colour contrast, or DOM order. Important topics, without question, but there’s a lot more to consider when writing inclusive CSS. This talk aims to help you create better interfaces by adapting to your users’ needs. You’ll learn how to debug and test with CSS, how attribute selectors can improve accessibility, and when CSS affects the semantics of your HTML.</p>
+        <section id="ManuelMatuzovic" class="speaker-detail clearfix">
+          <h3 class="speaker">Manuel Matuzović</h3>
+          <img src="/2020/assets/speakers/ManuelMatuzovic_400x400.jpg" alt="Headshot of Manuel Matuzović" />
+          <div class="speaker-bio">
+            <p>Manuel is a front-end developer from Vienna, specialized in HTML, CSS, accessibility, and performance. He likes to write about these topics and talk at meetups and conferences. He’s organizer of the webclerks conference in Vienna, and he maintains htmhell.dev and frontendbookmarks.com.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/mmatuzo" target="_blank">Connect with Manuel Matuzović on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="begin-to-design-for-cognitive-disabilities" class="talk">
+        <h2 class="talk-name">How we can begin to design for cognitive disabilities</h2>
+        <p class="talk-desc">Cognitive disabilities are the most common kind of disability, yet it’s a disability that is not often discussed when it comes to web accessibility. Let’s talk about concrete steps we can take towards making the web more accessible for people with a range of cognitive disabilities.</p>
+        <section id="ToluAdegbite" class="speaker-detail clearfix">
+          <h3 class="speaker">Tolu Adegbite</h3>
+          <img src="/2020/assets/speakers/ToluAdegbite_400x400.jpg" alt="Headshot of Tolu Adegbite" />
+          <div class="speaker-bio">
+            <p>Tolu is a product designer, developer and accessibility specialist based in Toronto. She’s passionate about social justice and creating inclusive spaces on- and offline. In her free time, she runs an accessibility blog, and offers mentorship to tech professionals from underrepresented groups, especially Black women. She also loves plants 🌿 and the occasional emoji 🙂.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/tolu_xyz" target="_blank">Connect with Tolu Adegbite on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="accessible-cards" class="talk">
+        <h2 class="talk-name">Accessible Cards</h2>
+        <p class="talk-desc">A card, or a tile, is one of the most used components on web pages. Displaying teasers as such is a basic way to inform users about new and important information on your site. This talk is about making cards accessible for all users. We'll focus on the research about what the best practice is for usability, accessibility and the accessibility guidelines. At the end of this talk you will have a better understanding of how people are using assistive technology, what the pitfalls are for cards and how to give everyone a better experience using the web.</p>
+        <section id="RianRietveld" class="speaker-detail clearfix">
+          <h3 class="speaker">Rian Rietveld</h3>
+          <img src="/2020/assets/speakers/RianRietveld_400x400.jpg" alt="Headshot of Rian Rietveld" />
+          <div class="speaker-bio">
+            <p>Rian Rietveld is a web accessibility specialist at the full-service WordPress agency Level Level and a trainer at the A11Y Collective. Accessibility is important to her, everyone should be able to use the web. Her mission is to educate everyone involved in a web project to create a web that works for all. She lives in a pretty little town near The Hague in the Netherlands. When not reviewing, teaching or coding, you can find her working in her garden.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/RianRietveld" target="_blank">Connect with Rian Rietveld on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="improve-the-WCAG-compliance-process" class="talk">
+        <h2 class="talk-name">Integrating an accessibility framework to improve the WCAG compliance process</h2>
+        <p class="talk-desc">This session explains the processes and artifacts required to integrate an Accessibility Framework within a project’s development life cycle. I will explain how accessibility can be introduced to activities such as: project requirement gathering, user experience, UI design, usability; development and testing. You can do this, while considering business goals and stakeholder objectives, even if business needs and technologies keep changing through iterative improvements.</p>
+        <section id="JuanOlarte" class="speaker-detail clearfix">
+          <h3 class="speaker">Juan Olarte</h3>
+          <img src="/2020/assets/speakers/JuanOlarte_400x400.jpg" alt="Headshot of Juan Olarte" />
+          <div class="speaker-bio">
+            <p>Juan Olarte is an IT and Accessibility Specialist with over 18 years of working experience. Juan has worked withthe government of Ontario, Scotiabank, BMO, CIBC, NTT DATA, George Brown College, Ryerson University, Deloitte and Allianz Global Assistance. Juan has taught the Inclusive Design Certificate at Humber College, and the "Creating Accessible Websites" class at Sheridan College. Juan is also the founder of Digita11y Accessible, where he helps organizations meet their accessibility needs. Being visually impaired himself, Juan has first-hand experience facing challenges for people with disabilities on the web.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/A11yJuan" target="_blank">Connect with Juan Olarte on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="a-good-time-for-a11y-and-rhymes" class="talk">
+        <h2 class="talk-name">Always a good time for a11y and rhymes</h2>
+        <p class="talk-desc">Accessibility and inclusivity are essential in today’s digital experiences. Creating for varied human abilities can be fun as well as serious. You don’t need to be an expert or a poet to lay down dope rhymes, whatever role you play, you can implement accessibility any time!</p>
+        <section id="DonnaVitan" class="speaker-detail clearfix">
+          <h3 class="speaker">Donna Vitan</h3>
+          <img src="/2020/assets/speakers/DonnaVitan_400x400.jpg" alt="Headshot of Donna Vitan" />
+          <div class="speaker-bio">
+            <p>Donna is a user experience, interaction, and visual designer committed to inclusive design. Donna supports products, projects, and cross-functional teams as a champion for best practices and accessibility. And most of all, she’s passionate about design systems, design tools and processes as the means to express inclusive design at scale. Donna helps to build accessible products at TELUS Digital, by improving tools and processes through collaboration and communication. Donna is also the Content and Social Media Manager for the Design Systems Community.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/donnavitan" target="_blank">Connect with Donna Vitan on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="procuring-accessible-ict" class="talk">
+        <h2 class="talk-name">Procuring accessible Information and Communication Technology (ICT)</h2>
+        <p class="talk-desc">Procurement is a key tool to improve accessibility in the workplace. When we buy accessible products and services, we enable employees with disabilities to work at their full potential. For the last two years, SSC has been piloting the inclusion of EN 301 549 requirements in enterprise procurements. This brief introduction to accessible ICT procurement will outline our strategy and approach.</p>
+        <section id="JulesKuehn" class="speaker-detail clearfix">
+          <h3 class="speaker">Jules Kuehn</h3>
+          <img src="/2020/assets/speakers/JulesKuehn_400x400.jpg" alt="Headshot of Jules Kuehn" />
+          <div class="speaker-bio">
+            <p>Jules Kuehn is an accessibility specialist at Accommodation and Adaptive Computer Technology (AAACT) and is part of the Shared Services Canada (SSC) interdisciplinary Accessibility Triage Team, which integrates accessibility into enterprise procurements.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/SSC_CA" target="_blank">Connect with Jules Kuehn on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="scope-wars" class="talk">
+        <h2 class="talk-name">Scope Wars</h2>
+        <p class="talk-desc">We know software is broken. It's been broken in the same ways for years... but why? We identify the issues and call them out over and over again, so how can we get to a place where the solutions are actually making it into production? Scope Wars will explore the intersection of accessibility and fast modern software development with advice on how to push for inclusion driven development throughout the entire product life cycle.</p>
+        <section id="AlexTait" class="speaker-detail clearfix">
+          <h3 class="speaker">Alex Tait</h3>
+          <img src="/2020/assets/speakers/AlexTait_314x314.jpg" alt="Headshot of Alex Tait" />
+          <div class="speaker-bio">
+            <p>Alex Tait is a developer, consultant and educator whose passion lies in the intersection of accessibility and modern JavaScript within interface architecture and design systems. As a developer, she believes that inclusion driven development practices with accessibility at the forefront lead to better products for everyone. As a consultant and strategist, she believes that less is more and that new feature scope creep cannot be prioritized over core feature parity for disabled users. As an educator, she believes in removing barriers to information so that tech can become a more diverse, equitable and inclusive industry.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/AT_Fresh_Dev" target="_blank">Connect with Alex Tait on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="love-made-visible" class="talk">
+        <h2 class="talk-name">Accessibility Quality Indicators: Love Made Visible</h2>
+        <p class="talk-desc">We tend to look to conformance with technical standards, like the Web Content Accessibility Guidelines, as a key indicator of digital accessibility commitment. But commitment comes in many shapes and sizes. What might seem like small measures can have a big impact in making digital accessibility and disability inclusion core to our work. In this session, we will explore what quality attention to digital accessibility looks like, in the world, in our organizations, and in ourselves.</p>
+        <section id="SarahHorton" class="speaker-detail clearfix">
+          <h3 class="speaker">Sarah Horton</h3>
+          <img src="/2020/assets/speakers/SarahHorton_400x400.jpg" alt="Headshot of Sarah Horton" />
+          <div class="speaker-bio">
+            <p>Sarah Horton focuses on ways to improve quality of life through good design. Sarah is an independent consultant, helping organizations create “born accessible” technology. She is also an author of books, articles, and papers on designing technology to improve quality of life. Sarah spent 20 years working in technology and higher education. In 2013, Sarah joined The Paciello Group as Director of User Experience and Design, leading efforts to build the consultancy’s user research and user experience design services. She transitioned to the role of Strategy Lead, guiding organizations on their digital accessibility journey. Sarah represented the company in improvement initiatives such as Teach Access and the Silver Taskforce.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/gradualclearing" target="_blank">Connect with Sarah Horton on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="accessible-ios-apps" class="talk">
+        <h2 class="talk-name">Accessible iOS apps: up to 11!</h2>
+        <p class="talk-desc">Let’s go on a journey to create, not just accessible iOS apps, but awesome accessible experiences that absolutely all your users will be able to use and love. How do we bring VoiceOver's support to the next level? How should we deal with Dynamic Type, so they can choose the font size? How can we support Smart Invert Colors? What about Reduce Motion, or Reduce Transparency? What is the Rotor? What can we do to improve the user's experience with Voice Control and Switch Control? And, how we can test all these features? We'll try to answer all these questions to help you bring the accessibility levels of your iOS app up to eleven!</p>
+        <section id="DanielDevesa" class="speaker-detail clearfix">
+          <h3 class="speaker">Daniel Devesa</h3>
+          <img src="/2020/assets/speakers/DanielDevesa_400x400.jpg" alt="Headshot of Daniel Devesa" />
+          <div class="speaker-bio">
+            <p>Daniel is a passionate developer with a wide variety of experiences developing iOS apps. While at uni, Daniel cofounded Desfici, a mobile development company, and hasn't stopped developing iOS apps since. Daniel worked in start-ups and largerorganizations like the BBC, Skyscanner, and Spotify. Always trying to embed accessibility in the team’s culture. Daniel shares a love for accessibility, at conferences like AppDevCon in Amsterdam, AltConf in San Jose, SwiftFest in Boston, and MobileConf in Bangkok. Daniel is the author of "Developing Accessible iOS Apps" published with Apress.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/dadederk" target="_blank">Connect with Daniel Devesa on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="how-to-design-a-digital-product-that-appeals" class="talk">
+        <h2 class="talk-name">How to design a digital product that appeals to people with a hearing loss like a magnet</h2>
+        <p class="talk-desc">This presentation guides creators, designers, and developers into gaining in-depth understanding and empathy for people who have a hearing loss. This varied group of customers will have different and unique experiences with your digital product. In this presentation, you gain insight to support you throughout your product roadmap, create your user persona, and win raving fans for your inclusive digital product.</p>
+        <section id="EyraAbraham" class="speaker-detail clearfix">
+          <h3 class="speaker">Eyra Abraham</h3>
+          <img src="/2020/assets/speakers/EyraAbraham_400x400.jpg" alt="Headshot of Eyra Abraham" />
+          <div class="speaker-bio">
+            <p>Eyra Abraham is a Founder/CEO of Lisnen, a Toronto-based startup, Lisnen, which develops technology for the d/Deaf and hard of hearing. Eyra graduated from McGill University with a Bachelor of Science in Computer Science. She pivoted her career into marketing and communications, but her love for technology and innovation drew her back to founding her company, which has a mission to empower people to overcome challenges.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/Eyra_Abraham" target="_blank">Connect with Eyra Abraham on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="building-a-pro-accessibility-culture" class="talk">
+        <h2 class="talk-name">How I’m building a pro-accessibility culture at Canada Post</h2>
+        <p class="talk-desc">I’ve spent the last year creating a pro-accessibility culture within the Digital Team at Canada Post. With executive support and funding, I’ve created an onboarding and training program and we’re embedding accessibility into the work that people do every day. I’ve used a people-focused approach—doing user testing with real people using assistive technology, teaching team members what they can do specifically to support accessibility and measuring the results. I’ve had an enormous amount of success with this approach, and I’d like to help others learn how to create positive organizational change and shift accessibility left.</p>
+        <section id="KateKalcevich" class="speaker-detail clearfix">
+          <h3 class="speaker">Kate Kalcevich</h3>
+          <img src="/2020/assets/speakers/KateKalcevich_400x400.jpg" alt="Headshot of Kate Kalcevich" />
+          <div class="speaker-bio">
+            <p>Kate Kalcevich has championed accessibility since the launch of the Ontarians with Disabilities Act in 2001. In the last decade, she redesigned Ontario.ca, led the Ontario Government’s first User Experience team, developed the Inclusive Design Toolkit, created Ontario’s design guide with an emphasis on accessible web components, and built two role-based digital accessibility training and resource guides.Kate Kalcevich In Kate's current role, she is leading Canada Post in making their websites and applications accessible while building capacity within the digital team to embed accessibility into their daily work. Kate also likes CrossFit, reading about biology (especially immunology, longevity and nutrition science), and spoiling her two cats. She is hearing impaired and is a certified Web Accessibility Specialist.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/katekalcevich" target="_blank">Connect with Kate Kalcevich on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="landmarks" class="talk">
+        <h2 class="talk-name">Landmarks</h2>
+        <p class="talk-desc">Landmark regions help your visitors make sense of and navigate your content, and can be particularly useful to people who can't see the visual design of the page, or who use the keyboard. But how did they come about, and how can you as developers provide—and, importantly, debug—these cues in a quick and easy way? Join Matthew for the origin story of landmarks, some helpful info on how to provide (and how you already may be providing) them, and a browser extension that can help you and your visitors along the way.</p>
+        <section id="MatthewTyleeAtkinson" class="speaker-detail clearfix">
+          <h3 class="speaker">Matthew Tylee Atkinson</h3>
+          <img src="/2020/assets/speakers/MatthewTyleeAtkinson_400x400.jpg" alt="Headshot of Matthew Tylee Atkinson" />
+          <div class="speaker-bio">
+            <p>Matthew is a senior accessibility engineer at The Paciello Group, and enjoys exploring accessibility through clients and colleagues. He maintains open-source projects in areas of web and game accessibility. Through TPG, he's a member of the W3C's Accessible Platform Architectures group—the opportunities to learn and contribute are super-rewarding. Matthew's background is in academia, having worked on accessibility research projects as well as teaching and presenting at conferences. When not tapping on a keyboard, he loves swimming, attending gigs, sci-fi and the magic of karaoke (some of which have been possible to enjoy virtually).</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/matatk" target="_blank">Connect with Matthew Tylee Atkinson on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="hidden-challenges-of-using-emoji" class="talk">
+        <h2 class="talk-name">Uncover the Hidden Challenges of Using Emoji</h2>
+        <p class="talk-desc">Emoji are graphical symbols that appear in many aspects of our lives, providing a way to express non-verbal conversational cues in online content. In particular, emoji are prominent across social media. Despite the popularity of emoji, people can experience accessibility challenges when using and encountering them within content and conversations. In this talk we will explain how emoji are used, the different accessibility challenges that they can present, and best practices for making sure that you use emoji. We will share hints and tips, based on our academic research, to help you to make sure that your emoji content is accessible and usable for a varied user group.</p>
+        <section id="RachelMenzies" class="speaker-detail clearfix">
+          <h3 class="speaker">Rachel Menzies </h3>
+          <img src="/2020/assets/speakers/RachelMenzies_400x400.jpg" alt="Headshot of Rachel Menzies" />
+          <div class="speaker-bio">
+            <p>Rachel is a UX researcher and Senior Lecturer (Associate Professor) in Computing at the University of Dundee. She co-directs the UX’d research group with the aim to understand how people use technology and develop new solutions to improve accessibility. Her mission is to help her students learn to be socially aware developers who create accessible solutions by default.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/Rachel_Menzies" target="_blank">Connect with Rachel Menzies on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="everyone-should-have-wap" class="talk">
+        <h2 class="talk-name">Everyone Should Have WAP (Web Accessibility Please)</h2>
+        <p class="talk-desc">You know how to design, code, test or write documentation for accessibility. You’ve had conversations and got buy-in from execs and stakeholders about the importance on making products accessible but is that all there is? As accessibility professionals we know how to talk to people within the tech industry about digital accessibility but how do you talk about your profession to the community at large. This talk we will look at how to breakdown technical jargon into everyday language that is accessible to everyone.</p>
+        <section id="CrystalPreston-Watson" class="speaker-detail clearfix">
+          <h3 class="speaker">Crystal Preston-Watson</h3>
+          <img src="/2020/assets/speakers/CrystalPreston-Watson_400x400.jpg" alt="Headshot of Crystal Preston-Watson" />
+          <div class="speaker-bio">
+            <p>Crystal has over a decade of experience working with online media and software companies throughout North America. Crystal started in journalism and transitioned into web development in 2010 as an front-end developer, before moving into quality assurance. Crystal's passion for accessibility testing took off when joining Aetna as design QA then as an accessibility engineer supporting and advising engineer teams. Currently, Crystal is a quality engineer focused on accessibility at Salesforce.org.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/ScopicEngineer" target="_blank">Connect with Crystal Preston-Watson on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="cross-screen-reader-bugs" class="talk">
+        <h2 class="talk-name">Cross Screen Reader Bugs & Where to Find them</h2>
+        <p class="talk-desc">Learn about why different assistive technologies can cause different bugs in your website, areas likely to harbour them, and how to wrangle fixes.</p>
+        <section id="WestonThayer" class="speaker-detail clearfix">
+          <h3 class="speaker">Weston Thayer</h3>
+          <img src="/2020/assets/speakers/WestonThayer_400x400.jpg" alt="Headshot of Weston Thayer" />
+          <div class="speaker-bio">
+            <p>I'm a software developer & designer working on apps, operating systems, and websites since 2011. I got my start with digital accessibility testing Microsoft Word with JAWS. For the past year and a half, I've been working on a tool called Assistiv Labs to make it easier for software developers, designers, and testers to try their products with assistive technologies.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/WestonThayer5" target="_blank">Connect with Weston Thayer on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="ethics-and-accessible-ux" class="talk">
+        <h2 class="talk-name">Tuskegee, Belmont and me—Ethics and Accessible UX</h2>
+        <p class="talk-desc">The events of 2020 are a stimulus for each of us to look at ethics and fairness and our own actions. User research with people with disabilities is an effective way to help us create more inclusive digital user experiences, and something that's becoming more commonly discussed as part of an accessibility strategy. But how effective are our efforts, and how respectful are they to the participants we work with? This talk reviews an ethical framework for research with human participants and how we can apply it to UX activity with people with disabilities, so that our work can have a positive impact on inclusion while also ensuring that our participants' involvement is valued and beneficial.</p>
+        <section id="DavidSloan" class="speaker-detail clearfix">
+          <h3 class="speaker">David Sloan</h3>
+          <img src="/2020/assets/speakers/DavidSloan_400x400.jpg" alt="Headshot of David Sloan" />
+          <div class="speaker-bio">
+            <p>David Sloan is User Research Lead at The Paciello Group (TPG). His main role is to help clients in their accessibility and inclusive design efforts by designing and delivering usability studies and user research projects that involve people with disabilities. Before joining TPG in 2013, he spent nearly 14 years as a researcher, teacher and consultant in inclusive design at the University of Dundee in Scotland. And long before discovering accessibility, he was a digital cartographer with Collins Bartholomew. Outside of work, his Covid-era hobby list has shrunk to running, hiking and movie watching.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/sloandr" target="_blank">Connect with David Sloan on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="writing-with-plain-language" class="talk">
+        <h2 class="talk-name">1-Up Your Writing with Plain Language</h2>
+        <p class="talk-desc">Writing reports and documentation is nothing new for many of us—we write them all the time. But even though we may do our best write clearly, those who receive our reports and documentation might not be as familiar with the subject matter as we are. At the end of the day, no matter how technically correct a document may be, our words won’t do much good if those who are reading them can’t understand what we’re trying to say. But writing isn’t a black box—there are straightforward techniques that we can use to help ensure that our message gets across.</p>
+        <section id="AshleyBischoff" class="speaker-detail clearfix">
+          <h2 class="speaker">Ashley Bischoff</h2>
+          <img src="/2020/assets/speakers/AshleyBischoff_400x400.jpg" alt="Headshot of Ashley Bischoff" />
+          <div class="speaker-bio">
+            <p>Ashley Bischoff is an accessibility wonk and copy editor for The Paciello Group. She has a knack for taming technical and business writing, and she’s a heartfelt advocate for plain language—she relishes any chance to comb corporate-speak into everyday language. Ashley lives in Dallas, and she likes listening to metal and drinking tea.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/FriendlyAshley" target="_blank">Connect with Ashley Bischoff on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="captions-benefit-all-of-us" class="talk">
+        <h2 class="talk-name">Captions Benefit all of us</h2>
+        <p class="talk-desc">Due to COVID-19, we had to shift meetups/workshops/conferences to the online. It also happened in Japan. This talk will share how we are making our webinars more accessible in Japan. An application allows us to provide automated real-time captions and translations so that we could have wider range of attendees.</p>
+        <section id="MakotoUEKI" class="speaker-detail clearfix">
+          <h2 class="speaker">Makoto UEKI</h2>
+          <img src="/2020/assets/speakers/MakotoUEKI_400x400.jpg" alt="Headshot of Makoto UEKI" />
+          <div class="speaker-bio">
+            <p>Makoto has contributed to the JIS (Japanese Industrial Standard) Working Group and W3C WCAG Working Group as a web accessibility expert. He was the chairman of the Web accessibility Committee in Japan (WAIC) between 2012 and 2019. Makoto is now participating in W3C's Silver task force and contributing to WCAG 3.0.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/mak_en" target="_blank">Connect with Makoto UEKI on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="culture-of-accessibility-and-inclusion" class="talk">
+        <h2 class="talk-name">Shift – Towards a culture of accessibility and Inclusion</h2>
+        <p class="talk-desc">Scotiabank will share how they transformed the business need for a new mobile app into an opportunity to build a design-led culture of digital inclusion.</p>
+        <section id="MonicaAckermann" class="speaker-detail clearfix">
+          <h3 class="speaker">Monica Ackermann</h3>
+          <img src="/2020/assets/speakers/MonicaAckermann_400x400.jpg" alt="Headshot of Monica Ackermann" />
+          <div class="speaker-bio">
+            <p>I work at Scotiabank and am the Director of Global Digital Accessibility. My team and I ensure that accessible design and development are at the foundation of digital banking. I have a passion for creating accessible digital spaces and for the inclusion of people with disabilities in society. I've been doing this since before the internet and back when Commodore 64's and single switch morse code were a gateway for communication for people with disabilities. I am a Professional Engineer and have a Master’s Degree in Critical Disability Studies from York University. For 20 years, I was the co-owner of a company specializing in workplace accommodation supporting employees and employers in creating inclusive workplaces. Advocating for the rights of people with disabilities is at the core of my career and I've been fortunate to have opportunities to do this work with ARCH Disability Law Centre in Canada and with Disability Rights Promotion International in India, Nepal, and Bangladesh.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/MonicaGigs" target="_blank">Connect with Monica Ackermann on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="looking-forward" class="talk">
+        <h2 class="talk-name">Looking Forward</h2>
+        <p class="talk-desc">Whether we like it or not, we are getting older by the minute. In this presentation, we will look at past innovations related to accessibility and look forward to our future selves. We will examine who we think about the most and the importance of making the most of our time.</p>
+        <section id="RegineGilbert" class="speaker-detail clearfix">
+          <h3 class="speaker">Reginé Gilbert</h3>
+          <img src="/2020/assets/speakers/RegineGilbert_400x400.jpg" alt="Headshot of Reginé Gilbert" />
+          <div class="speaker-bio">
+            <p>Reginé Gilbert is an Industry Assistant Professor of Technology, Culture, and Society at NYU Tandon, where she teaches in the Integrated Digital Media (IDM) program. Reginé is a user experience designer, educator, and international public speaker with over 10 years of experience working in the technology arena. She has a strong belief in making the world a more accessible place—one that starts and ends with the user. Her book, Inclusive Design for a Digital World: Designing with Accessibility in Mind, was published in 2019. Reginé worked at such well-known companies as Disney, JP Morgan, Four Seasons Hotel and Resorts, Ralph Lauren, and Vitamin Shoppe. She has spoken at such events as the International User Experience Professional Association conference and the Design and Diversity conference.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/reg_inee" target="_blank">Connect with Reginé Gilbert on Twitter</a></p>
+        </section>
+      </section>
+
+      <section id="beautiful-design-can-also-be-accessible" class="talk">
+        <h2 class="talk-name">A beautiful design can also be accessible</h2>
+        <p class="talk-desc">Web accessibility is not only the responsibility of developers. Designers also play an important role in creating an accessible product. You can use colour, images, icons, videos, animation and a fancy layout and still designing an accessible product. This talk is an overview of what designers should know about accessibility.</p>
+        <section id="TouficSbeiti" class="speaker-detail clearfix">
+          <h3 class="speaker">Toufic Sbeiti</h3>
+          <img src="/2020/assets/speakers/TouficSbeiti_400x400.jpg" alt="Headshot of Toufic Sbeiti" />
+          <div class="speaker-bio">
+            <p>Toufic is an Ottawa-based Web Accessibility professional. He has been in the web development field for over 15 years and active in the web accessibility Community since 2010. Toufic is the manager of the web team at Immigration, Refugees and Citizenship Canada. He is the co-organizer of #a11yyow Accessibility Camp Ottawa.</p>
+          </div>
+          <p class="speaker-twitter"><a href="https://twitter.com/touficsbeiti" target="_blank">Connect with Toufic Sbeiti on Twitter</a></p>
+        </section>
+      </section>
+
+    </article>
+  </main>
+
+  <section class="sponsorships">
+    <h2>Our Sponsors</h2>
+    <h3 class="sub-head">Diamond Sponsor</h3>
+    <div class="sponsors ">
+      <div>
+        <img src="/2020/assets/sponsors/abledocs-logo.png " alt="Abled Docs" class="logo">
+      </div>
+    </div>
+    <h3 class="sub-head">Platinum Sponsors</h3>
+    <div class="sponsors ">
+      <div>
+        <img src="/2020/assets/sponsors/td_logo.png " alt="TD" class="logo">
+      </div>
+    </div>
+    <h3 class="sub-head">Gold Sponsors</h3>
+    <div class="sponsors ">
+      <div>
+        <img src="/2020/assets/sponsors/crawford-technologies.png" alt="Crawford Technologies" class="logo ">
+      </div>
+      <div>
+        <img src="/2020/assets/sponsors/deque_logo.png " alt="Deque Systems " class="logo ">
+      </div>
+      <div>
+        <img src="/2020/assets/sponsors/ea-logo.png " alt="eSSential Accessibility" class="logo ">
+      </div>
+      <div>
+        <img src="/2020/assets/sponsors/tpg.png " alt="The Paciello Group (TPG)" class="logo ">
+      </div>
+    </div>
+    <h3 class="sub-head">Silver Sponsors</h3>
+    <div class="sponsors ">
+      <div>
+        <img src="/2020/assets/sponsors/Adobe-logo.png " alt="Adobe" class="logo ">
+      </div>
+      <div>
+        <img src="/2020/assets/sponsors/RO-logo.png " alt="Reason One" class="logo ">
+      </div>
+    </div>
+    <h3 class="sub-head">Bronze Sponsors</h3>
+    <div class="sponsors ">
+      <div>
+        <img src="/2020/assets/sponsors/da11y-logo.png " alt="Digita11y Accessible" class="logo ">
+      </div>
+      <div>
+        <img src="/2020/assets/sponsors/Infoaxia_logo.png " alt="Infoaxia" class="logo ">
+      </div>
+    </div>
+    <p>If you are interested in sponsoring <strong>#a11yTO</strong>, please email us at <a href="mailto:sponsor@a11yto.com ">sponsor@a11yto.com</a></p>
+  </section>
+  <footer>
+    <p>2020 <a href="https://a11yto.com/">#a11yTO</a> &ndash; <a href="/organizers">Organizers</a> &ndash; <a href="/past-events">Past Events</a> &ndash; <a href="/accessibility-statement">Accessibility Statement</a> &ndash; <a href="/code-of-conduct">Code of Conduct</a>
+    </p>
+  </footer>
+</body>
+
+</html>

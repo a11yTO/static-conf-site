@@ -14,7 +14,7 @@ $inverted-font-color: #ffffff;
 $background: #ffffff;
 $secondary-color: #025b9f;
 $secondary-background: #edf5f8;
-$error: #f00;
+$attention: #b30a2e;
 
 $base-font-size: 112.5%;
 
@@ -523,7 +523,7 @@ textarea {
   height: 10em;
 }
 .required {
-  color: $error;
+  color: $attention;
   font-size: 75%;
   font-style: italic;
 }
@@ -734,22 +734,29 @@ button {
 /* End #a11yTO.com Branded Events structure & styles */
 
 /* -------------------------------------------------------------------------
- * Staged site structure & styles
+ * Attention banner structure & styles
  * ------------------------------------------------------------------------- */
-.staged {
+ .attention {
   background: black;
-  color: $inverted-font-color;
-  font-size: 75%;
+  color: white;
+  font-size: 85%;
   line-height: 1.1;
+  font-weight: bold;
   margin: 0;
-  padding: 0.5em;
+  padding: 1em;
   text-align: center;
   width: 100%;
 }
-.staged a {
-  color: $inverted-font-color;
+.attention a {
+  color: white;
+  white-space: nowrap;
 }
-.staged a:focus {
-  text-decoration: none;
+@supports (text-underline-offset: 0) {
+  .attention a {
+    text-decoration-color: white;
+  }
+}
+.attention a:focus {
+  text-decoration: none;  
   outline: 2px solid white;
 }
