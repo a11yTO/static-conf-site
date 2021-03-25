@@ -17,7 +17,7 @@ title: a11yTO Conf
 identifier: conf
 email: info@a11yto.com
 description: A curated playlist of talks, focused on digital accessibility
-event-date: October 21st to 23rd, 2020
+event-date: October, 2021
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://conf.a11yto.com/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
