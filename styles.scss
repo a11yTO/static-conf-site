@@ -169,7 +169,7 @@ ol {
 /* -------------------------------------------------------------------------
  * Link styles
  * ------------------------------------------------------------------------- */
- a {
+a {
   color: $link-color;
   &:active {
     color: $secondary-color;
@@ -178,6 +178,7 @@ ol {
 *:focus,
 a:focus {
   outline: 2px solid black;
+  outline-offset: 3px;
   text-decoration: none;
 }
 .main-nav-menu {
@@ -194,7 +195,7 @@ a:focus {
     border-radius: 1.38em;
     color: #fff !important;
     font-weight: bold;
-    padding: 0.44em 0.83em;
+    padding: 0.44em 1.25em;
     white-space: nowrap;
   }
 }
@@ -206,6 +207,24 @@ a[aria-current] {
 .social-icons {
   a {
     padding: 0.75em 0.25em 0;
+  }
+}
+.register a {
+  background: #fff;
+  border-radius: 1.5em;
+  color: $brand-color !important;
+  font-weight: bold;
+  // padding: 0.15em 0.65em 0.25em;
+  padding: 0.44em 1.25em;
+  text-decoration: none;
+  white-space: nowrap;
+  &:focus {
+    outline-color: #fff;
+  }
+}
+@media screen and (min-width: $main-nav-wide-breakpoint) {
+  .register a {
+    padding: 0.15em 0.65em 0.25em;
   }
 }
 @supports (text-underline-offset: 0) {
@@ -221,7 +240,7 @@ a[aria-current] {
     text-decoration-line: none;
   }
   .main-nav-menu a[aria-current] {
-    text-decoration-color: $brand-color; 
+    text-decoration-color: $brand-color;
   }
   footer a[aria-current] {
     text-decoration-line: none;
