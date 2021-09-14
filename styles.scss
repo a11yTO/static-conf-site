@@ -658,6 +658,9 @@ button {
 .talk h2 {
   text-transform: capitalize;
 }
+.talk .no-caps {
+  text-transform: none;
+}
 
 /* -------------------------------------------------------------------------
 * Camp schedule table
