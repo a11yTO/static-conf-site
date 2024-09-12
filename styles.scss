@@ -511,14 +511,25 @@ article,
     }
   }
 }
-.google-maps {
+@media screen and (min-width: 55em) {
+  .audience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+  }
+}
+.google-maps,
+.promo,
+.why-attend {
   position: relative;
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
   margin: 0.75em 0;
 }
-.google-maps iframe {
+.google-maps iframe,
+.promo iframe,
+.why-attend iframe {
   position: absolute;
   top: 0;
   left: 0;
