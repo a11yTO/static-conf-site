@@ -52,6 +52,10 @@ body {
 .hidden {
   display: none;
 }
+img {
+  height: auto;
+  width: 100%;
+}
  /* End global reset */
 
 /* -------------------------------------------------------------------------
@@ -538,6 +542,11 @@ article,
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+img.convince {
+  display: block;
+  margin: 0 auto;
+  max-width: 38em;
 }
 .address {
   list-style: none;
