@@ -253,6 +253,17 @@ a[aria-current] {
     outline-color: #fff;
   }
 }
+.oops .register a {
+  background: $brand-color !important;
+  color: #fff !important;
+  margin: 0 auto;
+  padding: 0.75em 1.25em;
+  text-decoration: none;
+  white-space: nowrap;
+  &:focus {
+    outline-color: $brand-color !important;
+  }
+}
 @media screen and (min-width: $main-nav-wide-breakpoint) {
   .register a {
     padding: 0.15em 0.65em 0.25em;
