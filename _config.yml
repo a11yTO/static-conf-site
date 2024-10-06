@@ -19,7 +19,7 @@ email: info@a11yto.com
 description: A curated playlist of talks, focused on digital accessibility
 event-date: October 3rd and 4th, 2024
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://conf.a11yto.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://conf.a11yto.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
 twitter_username: a11yTO
 
