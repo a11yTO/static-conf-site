@@ -50,6 +50,7 @@ iframe {
 }
 img,
 iframe {
+  height: auto; 
   width: 100%;
 }
 
@@ -566,7 +567,7 @@ a:focus-visible,
 .colophon a[aria-current] {
   color: #222222;
   color: var(--text-color);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 
